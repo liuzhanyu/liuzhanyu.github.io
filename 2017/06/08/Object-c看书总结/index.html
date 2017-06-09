@@ -7,17 +7,19 @@
   
   
   
-  <title>Archives: 2017 | 瀚宇 悟道</title>
+  <title>Objext-c  看书总结 | 瀚宇 悟道</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="天下事，有难易乎，为之，则难者亦易矣；不为，则易者亦难矣。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="瀚宇 悟道">
-<meta property="og:url" content="https://github.com/hexojs/hexo/archives/2017/index.html">
+  <meta name="description" content="每次在头文件中引入其他头文件之前，都要先问问自己这样做是否确有必要。如果可以用向前声明取代引入，那么就不要引入。若因为要实现属性、实例变量或者要遵循协议而必须引入头文件，者尽量将其移至“class- continuation”分类中。这样做不仅可以缩短编译时间，而且还能降低彼此依赖程度">
+<meta name="keywords" content="Objext-c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Objext-c  看书总结">
+<meta property="og:url" content="https://github.com/hexojs/hexo/2017/06/08/Object-c看书总结/index.html">
 <meta property="og:site_name" content="瀚宇 悟道">
-<meta property="og:description" content="天下事，有难易乎，为之，则难者亦易矣；不为，则易者亦难矣。">
+<meta property="og:description" content="每次在头文件中引入其他头文件之前，都要先问问自己这样做是否确有必要。如果可以用向前声明取代引入，那么就不要引入。若因为要实现属性、实例变量或者要遵循协议而必须引入头文件，者尽量将其移至“class- continuation”分类中。这样做不仅可以缩短编译时间，而且还能降低彼此依赖程度">
+<meta property="og:updated_time" content="2017-06-09T07:18:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="瀚宇 悟道">
-<meta name="twitter:description" content="天下事，有难易乎，为之，则难者亦易矣；不为，则易者亦难矣。">
+<meta name="twitter:title" content="Objext-c  看书总结">
+<meta name="twitter:description" content="每次在头文件中引入其他头文件之前，都要先问问自己这样做是否确有必要。如果可以用向前声明取代引入，那么就不要引入。若因为要实现属性、实例变量或者要遵循协议而必须引入头文件，者尽量将其移至“class- continuation”分类中。这样做不仅可以缩短编译时间，而且还能降低彼此依赖程度">
   
     <link rel="alternative" href="/atom.xml" title="瀚宇 悟道" type="application/atom+xml">
   
@@ -42,8 +44,8 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
-          isArchive: true,
+          isPost: true,
+          isArchive: false,
           isTag: false,
           isCategory: false,
           open_in_new: false
@@ -272,114 +274,213 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-Object-c看书总结" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a  href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a  href="/2017/06/08/Object-c看书总结/" class="archive-article-date">
-      <time datetime="2017-06-08T03:12:54.000Z" itemprop="datePublished">06-08</time>
+    <div class="article-meta">
+      <a  href="/2017/06/08/Object-c看书总结/" class="article-date">
+      <time datetime="2017-06-08T03:12:54.000Z" itemprop="datePublished">2017-06-08</time>
 </a>
 
-        </div>
-         
+    </div>
   
-    <h1 itemprop="name">
-      <a  class="archive-article-title" href="/2017/06/08/Object-c看书总结/">Objext-c  看书总结</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Objext-c  看书总结
     </h1>
   
 
 
-        <div class="article-info info-on-archive">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 
-          
+        
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Objext-c/">Objext-c</a></li></ul>
     </div>
 
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <hr>
+<ul>
+<li>每次在头文件中引入其他头文件之前，都要先问问自己这样做是否确有必要。如果可以用向前声明取代引入，那么就不要引入。若因为要实现属性、实例变量或者要遵循协议而必须引入头文件，者尽量将其移至“class- continuation”分类中。这样做不仅可以缩短编译时间，而且还能降低彼此依赖程度</li>
+</ul>
+<hr>
+<a id="more"></a>
+<ul>
+<li>“class-continuation分类”和普通的分类不同，它必须定义在其所接续的那个类的实现文件，其中的方法都应该定义在类的主实现文件里。与其他分类不同，“class-continiuation分类”写法如下:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">@interface LzyPerson ()</div><div class="line">//Methods here</div><div class="line">@end</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<ul>
+<li>多用字面量语法，少用与之等价的方法 用字面量语法创建数组或字典时，若值中有nil,则会抛出异常。因此务必确保值里不含nil.</li>
+</ul>
+<p>、、、、、、、、、、、、、、、、、、、、、、、、、、、</p>
+<ul>
+<li>不要用预处理指令定义常量。这样定义出来的常量不含类型信息，编译器只是会在编译钱据此执行查找与替换操作。即使有人重新定义了常量值，编译器也不会产生警告信息，这将导致应用程序中的常量不一致。</li>
+<li>在实现文件中使用static const 来定义 “只有在编译单元内可见的变量”。由于此类常量不在全局符号表中，所以无需为其名称添加前缀。</li>
+<li>Objective-C运行期环境，它提供了一些是的对象之间能够传递消息的重要函数，并且包含穿件类市里所用的全部逻辑。理解了运行期环境中的各个部分协同工作的原理</li>
+</ul>
+
+      
+    </div>
+    
   </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a  href="/2017/06/08/Object-c看书总结/">Objext-c  看书总结</a></p>
+        <p><span>文章作者:</span><a  href="/" title="访问 瀚宇悟道 的个人博客">瀚宇悟道</a></p>
+        <p><span>发布时间:</span>2017年06月08日 - 11时12分</p>
+        <p><span>最后更新:</span>2017年06月09日 - 15时18分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/06/08/Object-c看书总结/" title="Objext-c  看书总结">https://github.com/hexojs/hexo/2017/06/08/Object-c看书总结/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://github.com/hexojs/hexo/2017/06/08/Object-c看书总结/　　作者: 瀚宇悟道" title=""></span>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a  href="/2017/06/08/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">刘占雨的第一篇博客</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+
+  
 </article>
-  
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a  href="/2017/06/08/hello-world/" class="archive-article-date">
-      <time datetime="2017-06-08T03:12:54.000Z" itemprop="datePublished">06-08</time>
-</a>
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a  class="archive-article-title" href="/2017/06/08/hello-world/">刘占雨的第一篇博客</a>
-    </h1>
-  
-
-
-        <div class="article-info info-on-archive">
-          
-
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-          <div class="article-meta">
-              <a  href="/2017/06/08/hello-worls/" class="archive-article-date">
-      <time datetime="2017-06-08T03:12:54.000Z" itemprop="datePublished">06-08</time>
-</a>
-
-        </div>
-         
-  
-    <h1 itemprop="name">
-      <a  class="archive-article-title" href="/2017/06/08/hello-worls/">瀚宇悟道的第一篇博客</a>
-    </h1>
-  
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
 
 
-        <div class="article-info info-on-archive">
-          
 
-          
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
 
     
+        <section class="changyan" id="comments">
+  <!--<div id="uyan_frame"></div>-->
+  <div id="SOHUCS"></div>
+  <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js"></script>
+  <script type="text/javascript">
+    window.changyan.api.config({
+      appid: 'xxxx',
+      conf: 'xxxxxxxxx'
+    });
+  </script>
+</section>
+    
 
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a  href="/2017/06/08/hello-world/" title="下一篇: 刘占雨的第一篇博客">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/06/08/Object-c看书总结/">Objext-c  看书总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/08/hello-world/">刘占雨的第一篇博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/08/hello-worls/">瀚宇悟道的第一篇博客</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        // $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+
+    <script>
+        
+    </script>
 
 </div>
       <footer id="footer">
@@ -469,17 +570,6 @@ ga('send', 'pageview');
         };
     })
 </script>
-
-    <button class="hide-labels">TAG 开关</button>
-    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js">
-    </script>
-    <script>
-        $(document).ready(function() {
-            $("button").click(function() {
-                $(".article-info").toggle(200);
-            });
-        });
-    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
