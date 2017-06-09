@@ -37,7 +37,7 @@
     <link rel="alternate" type="application/rss+xml" title="瀚宇 悟道" href="/atom.xml">
     
 
-    <link rel="canonical" href="https://github.com/hexojs/hexo"/>
+    <link rel="canonical" href="https://github.com/hexojs/hexo/2017/06/08/Object-c看书总结/"/>
 
                  
 </head>
@@ -51,7 +51,7 @@
     </span>
 
     
-<header class="panel-cover " style="background-image: url(/images/background-cover.jpg)">
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
   <div class="panel-main">
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
@@ -142,29 +142,54 @@
 
     <div class="content-wrapper">
         <div class="content-wrapper__inner">
-            <div class="main-post-list">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-06-08T03:12:54.000Z" class="post-list__meta--date date">2017-06-08</time> &#8226; <span class="post-meta__tags tags">于&nbsp; </span>
+      <span class="page-pv">
+      &nbsp;阅读&nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title"></h1>
+  </header>
+
+  <section class="post">
+    <h1 id="Objext-c-看书总结"><a href="#Objext-c-看书总结" class="headerlink" title="Objext-c    看书总结"></a><strong>Objext-c</strong>    看书总结</h1><hr>
+<ul>
+<li>每次在头文件中引入其他头文件之前，都要先问问自己这样做是否确有必要。如果可以用向前声明取代引入，那么就不要引入。若因为要实现属性、实例变量或者要遵循协议而必须引入头文件，者尽量将其移至“class- continuation”分类中。这样做不仅可以缩短编译时间，而且还能降低彼此依赖程度</li>
+</ul>
+<hr>
+<ul>
+<li>“class-continuation分类”和普通的分类不同，它必须定义在其所接续的那个类的实现文件，其中的方法都应该定义在类的主实现文件里。与其他分类不同，“class-continiuation分类”写法如下:<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">@interface LzyPerson ()</div><div class="line">//Methods here</div><div class="line">@end</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<ul>
+<li>多用字面量语法，少用与之等价的方法 用字面量语法创建数组或字典时，若值中有nil,则会抛出异常。因此务必确保值里不含nil.</li>
+</ul>
+<p>、、、、、、、、、、、、、、、、、、、、、、、、、、、</p>
+<ul>
+<li>不要用预处理指令定义常量。这样定义出来的常量不含类型信息，编译器只是会在编译钱据此执行查找与替换操作。即使有人重新定义了常量值，编译器也不会产生警告信息，这将导致应用程序中的常量不一致。</li>
+<li>在实现文件中使用static const 来定义 “只有在编译单元内可见的变量”。由于此类常量不在全局符号表中，所以无需为其名称添加前缀。</li>
+<li>Objective-C运行期环境，它提供了一些是的对象之间能够传递消息的重要函数，并且包含穿件类市里所用的全部逻辑。理解了运行期环境中的各个部分协同工作的原理</li>
+</ul>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
     
-  <ol class="post-list">
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2017/06/08/hello-worls/" title="link to post.title">瀚宇悟道的第一篇博客</a></h2>
-      <p class="excerpt">
-    
-      Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2017-06-08T03:12:54.000Z" class="post-list__meta--date date">2017-06-08</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;</span><a class="btn-border-small" href="/2017/06/08/hello-worls/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
-  
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2017/06/08/hello-world/" title="link to post.title">刘占雨的第一篇博客</a></h2>
-      <p class="excerpt">
-    
-      
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">最近的文章</span>
+                <h2 class="post-list__post-title post-title"><a href="/2017/06/08/hello-world/" title="刘占雨的第一篇博客">刘占雨的第一篇博客</a></h2>
+                <p class="excerpt">
+                
+                
 百度主页 
 
 [刘占雨第一篇微博]
@@ -205,70 +230,22 @@ $1
 
 
 计算机
-\$1600
-5
-
-
-手机
-\$12
-12
-
-
-管线
-\$1
-234
-
-
-
-1234567891011121
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2017-06-08T03:12:54.000Z" class="post-list__meta--date date">2017-06-08</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;</span><a class="btn-border-small" href="/2017/06/08/hello-world/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
+\$16
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2017-06-08T03:12:54.000Z" class="post-list__meta--date date">2017-06-08</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;</span><a class="btn-border-small" href="/2017/06/08/hello-world/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+        
+     
+   
+   
   
-    
-    <li>
-      <h2 class="post-list__post-title post-title"><a href="/2017/06/08/Object-c看书总结/" title="link to post.title"></a></h2>
-      <p class="excerpt">
-    
-      Objext-c    看书总结
+</section>
 
-每次在头文件中引入其他头文件之前，都要先问问自己这样做是否确有必要。如果可以用向前声明取代引入，那么就不要引入。若因为要实现属性、实例变量或者要遵循协议而必须引入头文件，者尽量将其移至“class- continuation”分类中。这样做不仅可以缩短编译时间，而且还能降低彼此依赖程度
-
-
-
-“class-continuation分类”和普通的分类不同，它必须定
-    &hellip;
-      </p>
-      <div class="post-list__meta"><time datetime="2017-06-08T03:12:54.000Z" class="post-list__meta--date date">2017-06-08</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;</span><a class="btn-border-small" href="/2017/06/08/Object-c看书总结/">继续阅读</a></div>
-      <hr class="post-list__divider" />
-    </li>
   
-    
-  </ol>
-
-
- <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
-        tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno",skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']},
-        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
-        messageStyle: "none"
-    }); 
-    
-</script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-</div>
-
 
             <footer class="footer">
     <span class="footer__copyright">
