@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   $('body').removeClass('no-js');
 
   $('a.blog-button').click(function() {
