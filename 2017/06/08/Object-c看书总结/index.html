@@ -403,7 +403,8 @@
   
     <div class="comments" id="comments">
       
-        <div id="gitment-container"></div>
+        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+        <div id="gitment-container" style="display:none"></div>
       
     </div>
 
@@ -680,7 +681,7 @@
         var gitment = new Gitmint({
             id: window.location.pathname, 
             owner: 'liuzhanyu',
-            repo: '瀚宇悟道',
+            repo: 'liuzhanyu',
             
             lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
             
@@ -695,7 +696,11 @@
       }
 
       
-      renderGitment();
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
       
       </script>
     
